@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>动态REM方案</title>
+	<script>
+	var scale = 1 / window.devicePixelRatio // 1\2\3
+	document.write(`
+		<meta name="viewport"
+			content="initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">
+		`)
+		var width = document.documentElement.clientWidth / window.devicePixelRatio
+		document.getElementsByTagName('html')[0].setAttribute('style','font-size:'+width / 10 * window.devicePixelRatio+'px')
+</script>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<header>
+	<img src="http://via.placeholder.com/750x340" alt="">
+</header>
+<section class="banner">
+		<img src="http://via.placeholder.com/750x100/eeeeee" alt="">
+</section>
+<nav>
+	<a href="">
+		<span><img src="http://via.placeholder.com/80" alt=""></span>
+		<p>导航入口</p>
+	</a>
+	<a href="">
+		<span><img src="http://via.placeholder.com/80" alt=""></span>
+		<p>导航入口</p>
+	</a>
+	<a href="">
+		<span><img src="http://via.placeholder.com/80" alt=""></span>
+		<p>导航入口</p>
+	</a>
+	<a href="">
+		<span><img src="http://via.placeholder.com/80" alt=""></span>
+		<p>导航入口</p>
+	</a>
+	<a href="">
+		<span><img src="http://via.placeholder.com/80" alt=""></span>
+		<p>导航入口</p>
+	</a>
+</nav>
+<section class="sale">
+	<div class="countdown">
+		倒计时 <span>0</span><span>0</span> 分 <span>0</span><span>0</span> 秒 结束
+	</div>
+</section>
+<section class="news">
+	<a href="" class="news-tit">
+		<img src="//st.360buyimg.com/m/images/index/jd-news-tit.png" alt="">
+	</a>
+	<div class="scroll-news"><span>热</span> <span>Express 搭建一个在线便利贴...</span></div>
+	<a href="" class="more">更多</a>
+</section>
+<section class="seckill">
+	<div class="seckill-title">
+		<h2>技术好文</h2>
+		<p><span><img src="http://via.placeholder.com/100x70/cccccc" alt=""></span><a href="">今日更新20篇博文 <span>&gt;</span></a></p>
+	</div>
+	<div class="seckill-new-list">
+		<div class="seckill-new-name"><span>新技术</span></div>
+		<ul class="seckill-new-item">
+			<li>
+				<a href="">
+					<div class="img-cover">
+						<img src="http://via.placeholder.com/260" alt="">
+						<span>四字方案</span>
+					</div>
+					<div class="item-desc">
+						<p class="title">动态rem写移动页面</p>
+						<p class="desc">这里是描述文字这里是描述文字这里是描述文字这里是描述文字这里是描述文字这里是描述文字</p>
+						<p class="type"><span>rem</span><span>css3</span><span>html5</span></p>
+						<p class="number">查看次数 66666</p>
+						<span class="like">888人喜欢</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="img-cover">
+						<img src="http://via.placeholder.com/260" alt="">
+						<span>四字方案</span>
+					</div>
+					<div class="item-desc">
+						<p class="title">动态rem写移动页面</p>
+						<p class="desc">这里是描述文字这里是描述文字这里是描述文字这里是描述文字这里是描述文字这里是描述文字</p>
+						<p class="type"><span>rem</span><span>css3</span><span>html5</span></p>
+						<p class="number">查看次数 66666</p>
+						<span class="like">888人喜欢</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</section>
+<section class="seckill clearfix">
+	<div class="seckill-title">
+		<h2>关于我</h2>
+		<p><a href="http://www.boloog.com/">最近更新5篇博文 <span>&gt;</span></a></p>
+	</div>
+	<div class="grid">
+		<a href="web前端开发工程师">web前端开发工程师</a>
+		<a href="全栈工程师">全栈工程师</a>
+		<a href="nodejs开发">nodejs开发</a>
+	</div>
+	<div class="real">
+		<a href="vue">vue</a>
+		<a href="react">react</a>
+		<a href="es6">es6</a>
+		<a href="webpack">webpack</a>
+	</div>
+	<div class="real">
+		<a href="html5">html5</a>
+		<a href="css3">css3</a>
+		<a href="flex">flex</a>
+		<a href="sass">sass</a>
+	</div>
+</section>
+<footer>
+	<a href="http://www.boloog.com/">我的博客</a>
+</footer>
+</body>
+</html>

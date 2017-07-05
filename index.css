@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* 重置样式 */
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: 0; }
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+img {
+  border: 0 none;
+  vertical-align: top;
+  width: 100%;
+  height: 100%; }
+
+i, em {
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+input, select, button, h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family: inherit; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/* 样式 */
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #e8e8ed; }
+
+header {
+  height: 4.5625rem; }
+
+.banner {
+  height: 1.34375rem; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 0.375rem 0.625rem 0.25rem;
+  background: #fff; }
+  nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 0.3125rem;
+    color: #333; }
+    nav a span {
+      display: block;
+      width: 1.09375rem;
+      height: 1.09375rem;
+      margin: 0 auto; }
+    nav a p {
+      line-height: 0.625rem; }
+
+.sale {
+  height: 3.8125rem;
+  background: url("http://via.placeholder.com/750x286/eeeeee") no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .sale .countdown {
+    padding-top: 2.8125rem;
+    font-size: 0.375rem; }
+    .sale .countdown span {
+      display: inline-block;
+      padding: 0.15625rem;
+      background: #000;
+      font-size: 0.28125rem;
+      color: #fff;
+      margin: 0 0.0625rem;
+      border-radius: 0.0625rem; }
+
+.news {
+  margin: 0.3125rem 0.25rem;
+  background-color: #f5f5fa;
+  border-radius: 0.1875rem;
+  padding: 0.1875rem;
+  position: relative; }
+  .news a {
+    display: block;
+    position: absolute;
+    top: 0.1875rem; }
+  .news .news-tit {
+    width: 1.8125rem;
+    height: 0.4375rem;
+    margin-top: 0.0625rem;
+    left: 0.1875rem; }
+  .news .scroll-news {
+    font-size: 0.375rem;
+    padding-left: 2rem;
+    padding-right: 1.25rem;
+    font-size: 0.375rem; }
+    .news .scroll-news span:nth-child(1) {
+      color: #df0b0d; }
+  .news .more {
+    font-size: 0.34375rem;
+    border-left: 2px #e9e9ee solid;
+    padding-left: 0.125rem;
+    right: 0.1875rem;
+    color: #686868; }
+
+.seckill {
+  font-size: 0.375rem;
+  margin-bottom: 0.3125rem;
+  background: #fff; }
+  .seckill .seckill-title {
+    padding: 0.0625rem 0.1875rem;
+    line-height: 0.9375rem;
+    height: 0.9375rem; }
+    .seckill .seckill-title h2 {
+      float: left; }
+    .seckill .seckill-title p {
+      float: right;
+      text-align: right; }
+      .seckill .seckill-title p > span {
+        display: inline-block;
+        width: 1.375rem;
+        height: 0.9375rem;
+        margin-right: 0.125rem; }
+      .seckill .seckill-title p a {
+        font-size: 0.3125rem;
+        color: #959595; }
+  .seckill .seckill-new-list {
+    position: relative;
+    background-color: #ffe7eb; }
+    .seckill .seckill-new-list .seckill-new-name {
+      width: 0.875rem;
+      height: 4rem;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAEsCAMAAABJ6DU+AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABUUExURf/M1cwGKcwGKcwGKf/K08wGKcwGKf+3xMwGKQAAAP/G0P/BzP+5xf++yv/I0v+7x/+4xf+9yP/DzswGKcwHKv/K0/ept/Sgrvmzv/Wksvq3w/q6xXVdSSQAAAAcdFJOU+YTCxrmDwjmBADm5ubm5ubm5uYWIeVeZXpskJ52mMPWAAADhklEQVR42u3cXVfjIBAGYLQola+E1FrX/f//c22rhjQMzJA5uz1nJ5dePA3D8EJTT5TacD0+P+/3+5fPa4uinh7PzH4zc3W2Mg9czNO5OhsZfbjezp0wu3tk9sIII4wwwggjjDDC/DPGhiG5uJGxg7lcQW9gdDDfV+hmtBvNfNlOxnqTX6GPcWZ5DV2MNSxMumVSD6NvFTP1MHE1Js1xNwOp/aK1X30/5MjoNGExXDt/uDTalLdMJCzN+D05o11M1WAJK1xn7TZq9fMHD89QgZkWne+uhXLBWaAoUxrNeB1sziA79iY+LsOHGV9F4hwfZ6fvbpbxkWoMnFE3RTRGV5jYKkqeZiDj2pmafSLAjBOmKHOLlRloD7jJ1LmKJcYDnR9TCTFel5lyIJSKclEi0H4OW5Q5PkpMxEzyMj5KjEYWJYsPxN1oBxRlKudNuTbOl5VFphYnXLeLkiKYfutV2S5Kjfn6LGiS/XqPgJZmCm7CFKXBfH4mqihNBleUHgbeOCkM8ghZR5JF7po1xFv05ts3HgITKId9eESahSnGobXZEQHFTIVM9YuSoRgLZqqP/YPK4yMRmKGSqZYw4RY+TTgC89PD60wNlC6+rm0boLrhl+YweLgZiLEFNfhGZrSKgfnuvk1MlqkbmDyDupllpnYyt19Gupj1RtPDFIKZzhQ3TioDfEOjMeDuS2JS3L75Vr+2EvZwhs239aWRMKjIw0w8TOBhPA9jNA9jeRjHwwQeJvEwnocxmoeJPIy9K2biYZwwwiyZF572e+FZDH+TqQTFgcBoFmaEQ/R4/vevPY6BnyAf37J/RuveYPSvA4EBu+997uENm+/77kBhgPn+2O3mAncfTD5eFzfTeUz6/UpkXHmSqEy5wvpEY0bonH8iMXDznSgzVcmsN0LfVA6Q+ZJqMNXfmfBL01UfkR2xTONhG5JJjQd2n0V+RqSfbTOIEPXIh5kNxikWRrMw6EerdSayPFpt3gyOiSxM+2YwzKhZGKc4GK9ZGKs4mKQ4GEx9EcykOJigOBivWRirOBinOJigOJikOZiBoMCMpygg46NiYEarGBhPVMoMcUTQ7+FkpcSQZhpkQoeyZpxS2xnyFBWZnrKsGacUAxMVC6OEEUYYYYQRRhhhhBFGGGGEEUYYYYQRRhhhhBFGGGGEEea/ZO7kVXh39ZpApncfcr2Jkem9kPNbKv8AIAXOw4/giH8AAAAASUVORK5CYII=) 0 0 no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2; }
+      .seckill .seckill-new-list .seckill-new-name span {
+        display: inline-block;
+        width: 0.4375rem;
+        color: #e3203d;
+        font-size: 0.4375rem;
+        position: absolute;
+        top: 50%;
+        left: 0.125rem;
+        transform: translateY(-50%); }
+    .seckill .seckill-new-list .seckill-new-item {
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: auto;
+      padding: 0.25rem 0 0.25rem 0.9375rem; }
+      .seckill .seckill-new-list .seckill-new-item li {
+        width: 8rem;
+        height: 3.4375rem;
+        display: inline-block; }
+        .seckill .seckill-new-list .seckill-new-item li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #fff; }
+          .seckill .seckill-new-list .seckill-new-item li a .img-cover {
+            width: 3.4375rem;
+            height: 3.4375rem;
+            float: left;
+            position: relative; }
+            .seckill .seckill-new-list .seckill-new-item li a .img-cover span {
+              display: inline-block;
+              font-size: 0.3125rem;
+              padding: 0.125rem 0.09375rem;
+              color: #fff;
+              background-color: #287dff;
+              border-top-right-radius: 0.5rem;
+              border-bottom-right-radius: 0.5rem;
+              position: absolute;
+              left: 0;
+              top: 0.3125rem; }
+          .seckill .seckill-new-list .seckill-new-item li a .item-desc {
+            padding: 0.3125rem 0.25rem 0.3125rem 3.75rem;
+            position: relative; }
+            .seckill .seckill-new-list .seckill-new-item li a .item-desc .title {
+              width: 3.75rem;
+              color: #1b1b1b;
+              font-size: 0.4375rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              height: 0.5625rem; }
+            .seckill .seckill-new-list .seckill-new-item li a .item-desc .desc {
+              margin-top: 0.0625rem;
+              color: #999;
+              font-size: 0.3125rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: normal;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical; }
+            .seckill .seckill-new-list .seckill-new-item li a .item-desc .type {
+              margin-top: 0.0625rem;
+              margin-bottom: 0.15625rem; }
+              .seckill .seckill-new-list .seckill-new-item li a .item-desc .type span {
+                font-size: 0.28125rem;
+                color: #e1272a;
+                border: 1px solid #f5b8b9;
+                border-radius: 0.0625rem;
+                margin-right: 0.0625rem;
+                padding: 0.03125rem; }
+            .seckill .seckill-new-list .seckill-new-item li a .item-desc .number {
+              color: #db0000;
+              font-size: 0.3125rem; }
+            .seckill .seckill-new-list .seckill-new-item li a .item-desc .like {
+              display: inline-block;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              font-size: 0.25rem;
+              color: #fff;
+              background-color: #ef8284;
+              padding: 0.125rem 0.15625rem;
+              border-top-left-radius: 0.5rem;
+              border-bottom-left-radius: 0.5rem; }
+  .seckill .grid {
+    background-color: #fff;
+    text-align: center;
+    position: relative; }
+    .seckill .grid a {
+      display: block;
+      width: 50%;
+      position: relative;
+      color: #686868; }
+      .seckill .grid a::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #ddd;
+        position: absolute;
+        top: 0; }
+    .seckill .grid a:nth-child(1) {
+      height: 4.6875rem;
+      line-height: 4.6875rem; }
+      .seckill .grid a:nth-child(1)::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 4.6875rem;
+        background-color: #ddd;
+        position: absolute;
+        right: 0; }
+    .seckill .grid a:nth-child(2) {
+      height: 2.34375rem;
+      line-height: 2.34375rem;
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .seckill .grid a:nth-child(3) {
+      height: 2.34375rem;
+      line-height: 2.34375rem;
+      position: absolute;
+      top: 2.34375rem;
+      right: 0; }
+  .seckill .real {
+    height: 2.5rem;
+    border-top: 1px #ddd solid;
+    text-align: center;
+    background-color: #fff; }
+    .seckill .real a {
+      display: block;
+      width: 25%;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      float: left;
+      position: relative;
+      color: #686868; }
+      .seckill .real a::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 2.5rem;
+        background-color: #ddd;
+        position: absolute;
+        top: 0;
+        right: 0; }
+
+footer {
+  margin: 0.3125rem;
+  background-color: #de181b;
+  border-radius: 0.1875rem;
+  text-align: center; }
+  footer > a {
+    display: block;
+    padding: 0.1875rem;
+    color: #fff;
+    font-size: 0.625rem; }
